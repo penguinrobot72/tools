@@ -1,0 +1,60 @@
+html,body{
+    background-color: rgb(233, 248, 240);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.put{
+    position: absolute;
+    left: 135px;
+    bottom: 375px;
+    font-size: 20px;
+    background-color: gold;
+}
+#setSecond{
+    position: absolute;
+    left: 300px;
+    bottom: 310px;
+} 
+#go{
+    position: absolute;
+    left: 485px;
+    bottom: 300px;
+    display: block;
+    width: 50px;
+    padding: 5px;
+    border-style: solid 1px;
+    border-radius: 5px;
+    margin: 5px auto;
+    font-size: 16px;
+    background-color: #35cbdc;
+    color: #fff;
+    cursor: pointer;
+}
+
+#go:hover {
+    background-color: #218bae;
+    transition: 0.3s;
+}
+
+#go:active {
+    background-color: #063c6e;
+}
+
+#time{
+    position: absolute;
+    left: 410px;
+    top: 340px;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.welcome{
+    border-style: solid 5px;
+    margin: 0;
+    text-align: center;
+    font-size: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: darkslateblue;
+    color: white;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>HOME</title>
+  <link rel="stylesheet" href="./style.css">
+
+
+<div class= "welcome">WELCOME(┐「ε:)_三┌(.ω.)┐三_(:3 」∠ )_</div>
+<div id= "NAME">What's your name?</div>
+<input type= text id= "id" onchange= welcome() size= "30" placeholder= "巴布亞企鵝"> <button onclick= welcome() id="buttonA">GO</button> 
+<div><p id= "hide"> </p></div>
+<script>
+  function welcome(){
+    document.getElementById("hide").innerHTML= 'GOOD MORNING,'+id.value+' (d＇∀＇)';
+  }
+</script>
+<div class ="put">我很抱歉但是沒有美感這種東西</div>
+<details id= "open"><summary>神奇小工具</summary>
+<a href= "tool1.html" class= "select">簡易計數器</a>
+<a href= "tool2.html" class= "select">倒數計時器</a>
+<a href= "tool3.html" class= "select">選擇困難福音</a>
+<a href= "tool4.html" class= "select">???</a>
+<a href= "https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img class= "taiko" src= "Screenshot_20221201-011155_Samsung Notes.jpg"></a>
+</details>
+
+
+</script>
+<!-- partial -->
+  <script  src="./script.js"></script>

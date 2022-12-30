@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>計時器</title>
+  <link rel="stylesheet" href="./tool2.css">
+  <!DOCTYPE html>
+  <div class= "welcome">倒數計時器(┐「ε:)_三┌(.ω.)┐三_(:3 」∠ )_</div>
+  <div class ="put">輸入你要的秒數，不用加s
+  </div>
+  <div><input id="setSecond"> </input> <button id= "go" onclick = "startCounting()">GO</button>
+    </div>
+    <span id="time">0 hr 0 min 0 sec</span>
+<script type="text/javascript">
+        let timer = 0;
+        let SetSecond = 0; //使用者所輸入的秒數，因為等等要用在倒數計時所以設置全域變數
+        function startCounting(){
+            setSecond = document.getElementById("setSecond").value //接受變數
+            console.log(setSecond) //JavaScript的print功能
+            SetSecond = parseInt(setSecond) //將得到的字串轉換為數字
+            //開始倒計時
+            timer = window.setInterval("Check_Time()", 1000);
+        }
+        function Check_Time() {
+            SetSecond -= 1;
+            if(SetSecond === 0){ //時間到了
+                alert("Time's up(`・ω・´)")
+                clearInterval(timer)
+                return
+            }
+             
+            console.log(SetSecond)
+            const time = document.getElementById("time");
+            const Hour = Math.floor(SetSecond / 3600);
+            const Minute = Math.floor(Math.floor(SetSecond % 3600) / 60);
+            const Second = SetSecond % 60;
+            time.innerHTML = Hour + " hr " + Minute + " min " + Second + " sec ";
+        }
+   </script>

@@ -1,0 +1,128 @@
+html,body{
+    background-color: rgb(233, 248, 240);
+}
+#id{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#NAME{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#open{
+    font-size: 20px;
+    margin: auto;
+    display: flex;
+    background-color: rgb(249, 255, 126);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#buttonA{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: mediumaquamarine;
+}
+#buttonA:hover{
+    background-color: red;
+    transition: 0.4s;
+}
+#hide{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@keyframes big{
+    0%{
+        color: red;
+    }
+    10%{
+        color: rgb(255, 82, 0);
+    }
+    20%{
+        color: orange;
+    }
+    30%{
+        color: rgb(255, 210, 0);
+    }
+    40%{
+        color: yellow;
+    }
+    50%{
+        color:rgb(127, 192, 0)
+    }
+    60%{
+        color: green;
+    }
+    70%{
+        color:rgb(0, 64, 127)
+    }
+    80%{
+        color: blue;
+    }
+    90%{
+        color: purple;
+    }
+    100%{
+        color: rgb(191, 0, 64);
+    }
+}
+#hide:hover{
+    font-size: 50px;
+    transition: 0.3s;
+    animation: big 0.7s infinite;
+}
+.welcome{
+    border-style: solid 5px;
+    margin: 0;
+    text-align: center;
+    font-size: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: darkslateblue;
+    color: white;
+}
+.select{
+    background-color: whitesmoke;
+    border: solid 1px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: black;
+    width: 120px;
+    height: 60px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select:hover{
+    background-color: lightsalmon;
+    transition: 0.3s;
+}
+.taiko{
+    height: 605px;
+    width: 540px;
+    position: relative;
+    left: 500px;
+    bottom: 150px;
+}
+.put{
+    position: absolute;
+    left: 135px;
+    bottom: 525px;
+    font-size: 20px;
+    background-color: gold;
+}
